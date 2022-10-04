@@ -55,7 +55,12 @@ int main (int argc, char *argv[]){
     cout << "El valor de la coordenada y es: " << coordy << endl;
     cout << "El valor del lado es: " << lado << endl;
 
-    Image newimage = image.Crop(coordx,coordy,lado, lado);
+    Image newimage = image.Crop(coordx,coordy,lado, lado).Zoom2X();
+
+    // Mostrar los parametros de la Imagen Resultado
+    cout << endl;
+    cout << "Dimensiones de " << destino << ":" << endl;
+    cout << "Imagen Generada  = " << newimage.get_rows()  << " filas x " << newimage.get_cols() << " columnas " << endl;
 
     // Guardar la imagen resultado en el fichero
     if (newimage.Save(destino))

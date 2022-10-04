@@ -16,6 +16,7 @@ using namespace std;
 /********************************
       FUNCIONES PRIVADAS
 ********************************/
+
 void Image::Allocate(int nrows, int ncols, byte * buffer){
     rows = nrows;
     cols = ncols;
@@ -140,21 +141,16 @@ byte Image::get_pixel (int i, int j) const {
 
 // This doesn't work if representation changes
 void Image::set_pixel (int k, byte value) {
-    // TODO this makes assumptions about the internal representation
-    // TODO Can you reuse set_pixel(i,j,value)?
     img[0][k] = value;
 }
 
 // This doesn't work if representation changes
 byte Image::get_pixel (int k) const {
-    // TODO this makes assumptions about the internal representation
-    // TODO Can you reuse get_pixel(i,j)?
     return img[0][k];
 }
 
 // Métodos para almacenar y cargar imagenes en disco
 bool Image::Save (const char * file_path) const {
-    // TODO this makes assumptions about the internal representation
     byte * p = img[0];
     return WritePGMImage(file_path, p, rows, cols);
 }
@@ -195,20 +191,28 @@ Image Image::Zoom2X() const {
 
     int newheight = get_rows()*2;
     int newwidth = get_cols()*2;
-    Image newimage(newwidth, newheight);
+    Image newimage(newheight, newwidth);
     byte valor_aux=0;
 
     //Asignación de pixeles
-    for(int i = 0; i < newwidth; i++){
 
-        for(int j = 0; j < newheight; j++){
+    for(int i = 0; i < newheight-1; i++){
+        for(int j = 0; j < newwidth-1; j++){
 
-            if(j%2 == 0 && i%2 == 0)
-                newimage.set_pixel(i, j, get_pixel(i/2, j/2));   //Filas y columnas pares
+            if(i%2 == 0) {
+                if (j%2 == 0)
+                    newimage.set_pixel(i, j, get_pixel(i/2, j/2));   //Filas y columnas pares
+
+                else{
+                    valor_aux= (get_pixel(i/2,j/2) + get_pixel(i/2,j/2+1)) /2;
+                    //cout << get_pixel(i/2,j/2)(int)valor_aux << endl;
+                    newimage.set_pixel(i, j, valor_aux); //Interpolación
+                }
+            }
 
             else{
                 valor_aux= (get_pixel(i/2,j/2) + get_pixel(i/2+1,j/2)) /2;
-                newimage.set_pixel(i, j, valor_aux); //Interpolación 3x3
+                newimage.set_pixel(i, j, valor_aux); //Interpolación
             }
         }
 
