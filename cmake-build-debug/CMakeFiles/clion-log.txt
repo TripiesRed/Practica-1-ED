@@ -1,0 +1,5 @@
+/snap/clion/206/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/206/bin/ninja/linux/ninja -G Ninja -S /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes -B /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug
+Doxygen build started
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug

@@ -1,0 +1,5 @@
+<map id="include/image.h" name="include/image.h">
+<area shape="rect" id="node1" title="Cabecera para la clase Image." alt="" coords="71,5,197,32"/>
+<area shape="rect" id="node2" href="$image_8cpp.html" title="Fichero con definiciones para los métodos primitivos de la clase Image." alt="" coords="5,80,119,107"/>
+<area shape="rect" id="node3" href="$imageop_8cpp.html" title="Fichero con definiciones para el resto de métodos de la clase Image." alt="" coords="143,80,272,107"/>
+</map>
