@@ -169,7 +169,7 @@ Image Image::Crop(int nrow, int ncol, int height, int width) const {
 
     else{
         if(width+ncol> get_cols())
-            width = get_cols()-ncol;
+            width -= get_cols()-ncol;
 
         if(height+nrow> get_rows())
             height = get_rows()-nrow;
@@ -180,7 +180,7 @@ Image Image::Crop(int nrow, int ncol, int height, int width) const {
 
         for(int j=0; j < height; j++){
 
-            newimage.set_pixel(i, j, get_pixel(i+ncol,j+nrow));
+            newimage.set_pixel(j, i, get_pixel(j+nrow,i+ncol));
         }
     }
 

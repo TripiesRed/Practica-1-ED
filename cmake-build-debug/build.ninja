@@ -77,6 +77,13 @@ build CMakeFiles/image.dir/estudiante/src/zoom.cpp.o: CXX_COMPILER__image_Debug 
   OBJECT_DIR = CMakeFiles/image.dir
   OBJECT_FILE_DIR = CMakeFiles/image.dir/estudiante/src
 
+build CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o: CXX_COMPILER__image_Debug /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/src/subimagen.cpp || cmake_object_order_depends_target_image
+  DEP_FILE = CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/include
+  OBJECT_DIR = CMakeFiles/image.dir
+  OBJECT_FILE_DIR = CMakeFiles/image.dir/estudiante/src
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target image
@@ -85,7 +92,7 @@ build CMakeFiles/image.dir/estudiante/src/zoom.cpp.o: CXX_COMPILER__image_Debug 
 #############################################
 # Link the static library libimage.a
 
-build libimage.a: CXX_STATIC_LIBRARY_LINKER__image_Debug CMakeFiles/image.dir/estudiante/src/image.cpp.o CMakeFiles/image.dir/estudiante/src/imageop.cpp.o CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o CMakeFiles/image.dir/estudiante/src/zoom.cpp.o
+build libimage.a: CXX_STATIC_LIBRARY_LINKER__image_Debug CMakeFiles/image.dir/estudiante/src/image.cpp.o CMakeFiles/image.dir/estudiante/src/imageop.cpp.o CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o CMakeFiles/image.dir/estudiante/src/zoom.cpp.o CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles/image.dir
   POST_BUILD = :
@@ -125,6 +132,39 @@ build negativo: CXX_EXECUTABLE_LINKER__negativo_Debug CMakeFiles/negativo.dir/es
   PRE_LINK = :
   TARGET_FILE = negativo
   TARGET_PDB = negativo.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target subimagen
+
+
+#############################################
+# Order-only phony target for subimagen
+
+build cmake_object_order_depends_target_subimagen: phony || cmake_object_order_depends_target_image
+
+build CMakeFiles/subimagen.dir/estudiante/src/subimagen.cpp.o: CXX_COMPILER__subimagen_Debug /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/src/subimagen.cpp || cmake_object_order_depends_target_subimagen
+  DEP_FILE = CMakeFiles/subimagen.dir/estudiante/src/subimagen.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/include
+  OBJECT_DIR = CMakeFiles/subimagen.dir
+  OBJECT_FILE_DIR = CMakeFiles/subimagen.dir/estudiante/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target subimagen
+
+
+#############################################
+# Link the executable subimagen
+
+build subimagen: CXX_EXECUTABLE_LINKER__subimagen_Debug CMakeFiles/subimagen.dir/estudiante/src/subimagen.cpp.o | libimage.a || libimage.a
+  FLAGS = -g
+  LINK_LIBRARIES = libimage.a
+  OBJECT_DIR = CMakeFiles/subimagen.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = subimagen
+  TARGET_PDB = subimagen.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target zoom
@@ -210,7 +250,7 @@ build image: phony libimage.a
 #############################################
 # Folder: /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug
 
-build all: phony libimage.a negativo zoom doc_doxygen
+build all: phony libimage.a negativo subimagen zoom doc_doxygen
 
 # =============================================================================
 # Built-in targets
