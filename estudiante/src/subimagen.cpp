@@ -52,8 +52,6 @@ int main (int argc, char *argv[]) {
     cout << endl;
     cout << "El valor del coordenada x es: " << coordx << endl;
     cout << "El valor de la coordenada y es: " << coordy << endl;
-    cout << "El numero de filas de la subimagen es: " << subfils << endl;
-    cout << "El numero de columnas de la subimagen es: " << subcols << endl;
 
     Image newimage = image.Crop(coordx,coordy,subfils, subcols);
 

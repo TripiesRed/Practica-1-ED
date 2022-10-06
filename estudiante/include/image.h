@@ -251,6 +251,11 @@ void set_pixel (int i, int j, byte value);
     bool Load (const char * file_path);
 
     // Invierte
+    /**
+    * @brief Genera una imagen la tonalidad de colores inversa a partir de una imagen dada
+    * @return Devuelve la imagen modificada
+    *
+    */
     void Invert();
 
     // Modifica el contraste de una Imagen .
@@ -277,7 +282,7 @@ void set_pixel (int i, int j, byte value);
     Image Crop(int nrow, int ncol, int height, int width) const;
 
     /**
-     * @brief Genera una imagen aumentada a doble de tamaño.
+     * @brief Genera una imagen aumentada a doble de tamaño a partir de una imagen dada
      * @return Devuelve la imagen modificada
      *
      */
@@ -285,6 +290,7 @@ void set_pixel (int i, int j, byte value);
 
     // Baraja pseudoaleatoriamente las filas de una imagen.
     void ShuffleRows();
+
 } ;
 
 

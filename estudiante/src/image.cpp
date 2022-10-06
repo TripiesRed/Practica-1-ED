@@ -169,7 +169,7 @@ Image Image::Crop(int nrow, int ncol, int height, int width) const {
 
     else{
         if(width+ncol> get_cols())
-            width -= get_cols()-ncol;
+            width = get_cols()-ncol;
 
         if(height+nrow> get_rows())
             height = get_rows()-nrow;
@@ -205,7 +205,6 @@ Image Image::Zoom2X() const {
 
                 else{
                     valor_aux= (get_pixel(i/2,j/2) + get_pixel(i/2,j/2+1)) /2;
-                    //cout << get_pixel(i/2,j/2)(int)valor_aux << endl;
                     newimage.set_pixel(i, j, valor_aux); //Interpolación
                 }
             }

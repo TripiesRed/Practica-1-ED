@@ -28,3 +28,15 @@
 0	196	1665069758326688317	CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o	f02196d2017d5fa8
 196	202	1665069758334688805	libimage.a	a8399fe5f048ed24
 202	241	1665069758370691001	subimagen	6a328d95a9b88af8
+1	195	1665071329229827293	CMakeFiles/image.dir/estudiante/src/image.cpp.o	b0ab83c95c94579e
+2	199	1665071329233827586	CMakeFiles/subimagen.dir/estudiante/src/subimagen.cpp.o	2f78d4bca5d26e1e
+2	201	1665071329237827879	CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o	f02196d2017d5fa8
+1	225	1665071329261829637	CMakeFiles/image.dir/estudiante/src/zoom.cpp.o	479746fd41dcface
+1	228	1665071329261829637	CMakeFiles/image.dir/estudiante/src/imageop.cpp.o	a9672f1c10f89383
+228	234	1665071329269830223	libimage.a	a8399fe5f048ed24
+234	275	1665071329309833154	subimagen	6a328d95a9b88af8
+0	181	1665071501218773502	CMakeFiles/image.dir/estudiante/src/image.cpp.o	b0ab83c95c94579e
+181	188	1665071501222773810	libimage.a	a8399fe5f048ed24
+188	225	1665071501258776579	subimagen	6a328d95a9b88af8
+0	182	1665071530905062834	CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.o	84196c9ceb9e7311
+182	216	1665071530937065309	zoom	8dc3d7f43beb67da
