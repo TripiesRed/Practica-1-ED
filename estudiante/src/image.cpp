@@ -7,6 +7,7 @@
 #include <cstring>
 #include <cassert>
 #include <iostream>
+#include <cmath>
 
 #include <image.h>
 #include <imageIO.h>
@@ -189,29 +190,36 @@ Image Image::Crop(int nrow, int ncol, int height, int width) const {
 
 Image Image::Zoom2X() const {
 
-    int newheight = get_rows()*2;
-    int newwidth = get_cols()*2;
+    int newheight = get_rows()*2-1;
+    int newwidth = get_cols()*2-1;
     Image newimage(newheight, newwidth);
     byte valor_aux=0;
 
     //Asignación de pixeles
 
-    for(int i = 0; i < newheight-1; i++){
-        for(int j = 0; j < newwidth-1; j++){
+    for(int i = 0; i < newheight; i++){
+        for(int j = 0; j < newwidth; j++){
 
             if(i%2 == 0) {
                 if (j%2 == 0)
                     newimage.set_pixel(i, j, get_pixel(i/2, j/2));   //Filas y columnas pares
 
                 else{
-                    valor_aux= (get_pixel(i/2,j/2) + get_pixel(i/2,j/2+1)) /2;
+                    valor_aux= lround((get_pixel(i/2,j/2) + get_pixel(i/2,j/2+1))/2.0 );
                     newimage.set_pixel(i, j, valor_aux); //Interpolación
                 }
             }
 
             else{
-                valor_aux= (get_pixel(i/2,j/2) + get_pixel(i/2+1,j/2)) /2;
-                newimage.set_pixel(i, j, valor_aux); //Interpolación
+                if (j%2 == 0){
+                    valor_aux= lround((get_pixel(i/2,j/2) + get_pixel(i/2+1,j/2))/2.0 );
+                    newimage.set_pixel(i, j, valor_aux); //Interpolación
+                }
+
+                else{
+                    valor_aux= lround((get_pixel(i/2,j/2) + get_pixel(i/2,j/2+1) + get_pixel(i/2+1,j/2) + get_pixel(i/2+1,j/2+1))/4.0 );
+                    newimage.set_pixel(i, j, valor_aux);
+                }
             }
         }
 
