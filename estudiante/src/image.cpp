@@ -248,6 +248,8 @@ Image Image::Subsample(int factor) const {
                     niter++;
                 }
 
+            //cout << (int)valor_aux << " " << total << " " << niter << " " << (valor_aux) << " " << endl;
+
             valor_aux= lround(total/niter);
             newimage.set_pixel(i,j,valor_aux);
 
@@ -259,6 +261,7 @@ Image Image::Subsample(int factor) const {
 
         //Actualizamos contador de filas
         contfils+=factor;
+        contcols=0;
 
     }
 
