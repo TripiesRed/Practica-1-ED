@@ -234,7 +234,8 @@ Image Image::Subsample(int factor) const {
     int newwidth=get_cols()/factor;
     Image newimage (newheight,newwidth);
     byte valor_aux;
-    int contfils=0, contcols=0;
+    int contfils=0, contcols=0,niter=0;
+    double total=0;
 
     //Asignación de pixeles
     for(int i = 0; i < newheight; i++){
@@ -242,16 +243,22 @@ Image Image::Subsample(int factor) const {
 
             //Tomamos los valores de los pixeles de la imagen origen
             for(int k = i*factor; k < contfils+factor && k < get_rows(); k++)
-                for(int l = j*factor; l < contcols+factor && l < get_cols(); l++)
-                    valor_aux+= get_pixel(k,l);
+                for(int l = j*factor; l < contcols+factor && l < get_cols(); l++){
+                    total+= (int)get_pixel(k,l);
+                    niter++;
+                }
 
-            valor_aux= lround(valor_aux/factor);
+            valor_aux= lround(total/niter);
             newimage.set_pixel(i,j,valor_aux);
 
-            //Actualizamos contadores
-            contfils+=factor;
+            //Actualizamos contador de columnas
             contcols+=factor;
+            niter=0;
+            total=0;
         }
+
+        //Actualizamos contador de filas
+        contfils+=factor;
 
     }
 
