@@ -1,5 +1,5 @@
 //
-// Created by gonzalomp on 6/10/22.
+// Created by gonzalomp on 8/10/22.
 //
 
 #include <iostream>
@@ -14,22 +14,19 @@ int main (int argc, char *argv[]) {
 
     char *origen, *destino; // nombres de los ficheros
     Image image;
-    int coordx, coordy, subfils, subcols; // datos de las para realizar el zoom de una zona concreta
+    int factor; // datos de las para realizar el zoom de una zona concreta
 
     // Comprobar validez de la llamada
-    if (argc != 7) {
+    if (argc != 4) {
         cerr << "Error: Numero incorrecto de parametros.\n";
-        cerr << "Uso: negativo <FichImagenOriginal> <FichImagenDestino> <fila> <col> <filas_sub> <cols_sub>\n";
+        cerr << "Uso: negativo <FichImagenOriginal> <FichImagenDestino> <factor>\n";
         exit(1);
     }
 
     // Obtener argumentos
     origen = argv[1];
     destino = argv[2];
-    coordx = stoi(argv[3]);
-    coordy = stoi(argv[4]);
-    subfils = stoi(argv[5]);
-    subcols = stoi(argv[6]);
+    factor = stoi(argv[3]);
 
     // Mostramos argumentos
     cout << endl;
@@ -37,7 +34,7 @@ int main (int argc, char *argv[]) {
     cout << "Fichero resultado: " << destino << endl;
 
     // Leer la imagen del fichero de entrada
-    if (!image.Load(origen)) {
+    if (!image.Load(origen)){
         cerr << "Error: No pudo leerse la imagen." << endl;
         cerr << "Terminando la ejecucion del programa." << endl;
         return 1;
@@ -46,14 +43,13 @@ int main (int argc, char *argv[]) {
     // Mostrar los parametros de la Imagen
     cout << endl;
     cout << "Dimensiones de " << origen << ":" << endl;
-    cout << "   Imagen   = " << image.get_rows() << " filas x " << image.get_cols() << " columnas " << endl;
+    cout << "   Imagen   = " << image.get_rows()  << " filas x " << image.get_cols() << " columnas " << endl;
 
-    // Mostramos los parámetros para generar la subimagen
+    // Mostramos los parámetros para realizar el zoom
     cout << endl;
-    cout << "El valor del coordenada x es: " << coordx << endl;
-    cout << "El valor de la coordenada y es: " << coordy << endl;
+    cout << "El valor del factor es: " << factor << endl;
 
-    Image newimage = image.Crop(coordx,coordy,subfils, subcols);
+    Image newimage = image.Subsample(factor);
 
     // Mostrar los parametros de la Imagen Resultado
     cout << endl;
@@ -68,7 +64,6 @@ int main (int argc, char *argv[]) {
         cerr << "Terminando la ejecucion del programa." << endl;
         return 1;
     }
-
 
     return 0;
 }

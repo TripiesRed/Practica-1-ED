@@ -252,9 +252,10 @@ void set_pixel (int i, int j, byte value);
 
     // Invierte
     /**
-    * @brief Genera una imagen la tonalidad de colores inversa a partir de una imagen dada
+    * @brief Genera una imagen con la tonalidad de colores inversa a partir de una imagen dada
+    * @pre Solo funciona para imágenes en blanco y negro
     * @return Devuelve la imagen modificada
-    *
+    * @post La imagen original no se modifica
     */
     void Invert();
 
@@ -265,26 +266,36 @@ void set_pixel (int i, int j, byte value);
     double Mean (int i, int j, int height, int width) const;
 
     // Genera un icono como reducción de una imagen.
+    /**
+     * @brief Genera una imagen reducida en función del valor introducido a partir de la imagen dada
+     * @param factor Valor de reducción de la imagen (ej: factor=2 => width= ncols/2 )
+     * @pre factor > 0
+     * @return Devuelve la imagen modificada
+     * @post La dimensión de la imagen modificada será int(nfils/factor) x int(ncols/factor). No se tienen
+     * en cuenta los decimales.
+     * @post La imagen original no se modifica
+     */
     Image Subsample(int factor) const;
 
     // Genera una subimagen.
     /**
      * @brief Genera una subimagen a partir de la imagen dada.
-     * @param nrow número de fila donde se coloca la esquina izquierda de la subimagen
-     * @param ncol número de columna donde se coloca la esquina izquierda de la subimagen
+     * @param nrow Número de fila donde se coloca la esquina izquierda de la subimagen
+     * @param ncol Número de columna donde se coloca la esquina izquierda de la subimagen
      * @param height Altura de la subimagen = número de filas
      * @param width Anchura de la subimagen = número de columnas
      * @pre nrow,ncol,height,width >= 0
      * @return Devuelve la subimagen
      * @post En caso de que el tamaño de la subimagen sobrepase los límites de la imagen original,
      * se ajustará su tamaño.
+     * @post La imagen original no se modifica
      */
     Image Crop(int nrow, int ncol, int height, int width) const;
 
     /**
      * @brief Genera una imagen aumentada a doble de tamaño a partir de una imagen dada
      * @return Devuelve la imagen modificada
-     *
+     * @post La imagen original no se modifica
      */
     Image Zoom2X() const;
 

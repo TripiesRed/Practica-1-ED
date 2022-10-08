@@ -228,3 +228,33 @@ Image Image::Zoom2X() const {
     return newimage;
 }
 
+Image Image::Subsample(int factor) const {
+
+    int newheight=get_rows()/factor;
+    int newwidth=get_cols()/factor;
+    Image newimage (newheight,newwidth);
+    byte valor_aux;
+    int contfils=0, contcols=0;
+
+    //Asignación de pixeles
+    for(int i = 0; i < newheight; i++){
+        for(int j = 0; j < newwidth; j++){
+
+            //Tomamos los valores de los pixeles de la imagen origen
+            for(int k = i*factor; k < contfils+factor && k < get_rows(); k++)
+                for(int l = j*factor; l < contcols+factor && l < get_cols(); l++)
+                    valor_aux+= get_pixel(k,l);
+
+            valor_aux= lround(valor_aux/factor);
+            newimage.set_pixel(i,j,valor_aux);
+
+            //Actualizamos contadores
+            contfils+=factor;
+            contcols+=factor;
+        }
+
+    }
+
+    return newimage;
+}
+
