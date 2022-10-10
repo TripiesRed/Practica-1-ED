@@ -155,12 +155,12 @@ bool Image::Save (const char * file_path) const {
     byte * p = img[0];
     return WritePGMImage(file_path, p, rows, cols);
 }
-
+// Método para obtener una imagen con la tonalidad invertida
 void Image::Invert() {
     for (int i=0; i<size(); i++)
         set_pixel(i,255-get_pixel(i));
 }
-
+// Método para obtener una subimagen
 Image Image::Crop(int nrow, int ncol, int height, int width) const {
 
     if(ncol>= get_cols() || nrow>= get_rows() || height<=0 || width<=0){
@@ -188,6 +188,7 @@ Image Image::Crop(int nrow, int ncol, int height, int width) const {
     return newimage;
 }
 
+// Método para obtener una imagen aumentada al doble de su tamaño
 Image Image::Zoom2X() const {
 
     int newheight = get_rows()*2-1;
@@ -228,6 +229,7 @@ Image Image::Zoom2X() const {
     return newimage;
 }
 
+// Método para obtener una imagen con tamaño reducido
 Image Image::Subsample(int factor) const {
 
     int newheight=get_rows()/factor;
