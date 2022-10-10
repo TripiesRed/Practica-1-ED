@@ -1,5 +1,18 @@
-/snap/clion/206/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/206/bin/ninja/linux/ninja -G Ninja -S /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes -B /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug
+/snap/clion/206/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /home/diegoos_03/Practica-1-ED -B /home/diegoos_03/Practica-1-ED/cmake-build-debug
+-- The C compiler identification is GNU 11.2.0
+-- The CXX compiler identification is GNU 11.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Doxygen: /usr/bin/doxygen (found version "1.9.1") found components: doxygen dot 
 Doxygen build started
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug
+-- Build files have been written to: /home/diegoos_03/Practica-1-ED/cmake-build-debug

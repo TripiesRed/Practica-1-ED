@@ -1,8 +1,8 @@
-/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug/CMakeFiles/image.dir
-/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug/CMakeFiles/negativo.dir
-/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug/CMakeFiles/subimagen.dir
-/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug/CMakeFiles/zoom.dir
-/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug/CMakeFiles/icono.dir
-/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug/CMakeFiles/doc_doxygen.dir
-/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/diegoos_03/Practica-1-ED/cmake-build-debug/CMakeFiles/image.dir
+/home/diegoos_03/Practica-1-ED/cmake-build-debug/CMakeFiles/negativo.dir
+/home/diegoos_03/Practica-1-ED/cmake-build-debug/CMakeFiles/subimagen.dir
+/home/diegoos_03/Practica-1-ED/cmake-build-debug/CMakeFiles/zoom.dir
+/home/diegoos_03/Practica-1-ED/cmake-build-debug/CMakeFiles/icono.dir
+/home/diegoos_03/Practica-1-ED/cmake-build-debug/CMakeFiles/doc_doxygen.dir
+/home/diegoos_03/Practica-1-ED/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/diegoos_03/Practica-1-ED/cmake-build-debug/CMakeFiles/rebuild_cache.dir
