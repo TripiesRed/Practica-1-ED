@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_3d_34',['operator=',['../classImage.html#aeaa2d687caf48e3c72fc773c70a0e9fa',1,'Image']]]
+  ['load_39',['Load',['../classImage.html#a997e2d58be54bca2cf8f4da5818bf771',1,'Image']]]
 ];

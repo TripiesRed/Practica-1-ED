@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['image_4',['Image',['../classImage.html',1,'Image'],['../classImage.html#a58edd1c45b4faeb5f789b0d036d02313',1,'Image::Image()'],['../classImage.html#a24d6fed0a7c3dc53b86411dd68bfbb2e',1,'Image::Image(int nrows, int ncols, byte value=0)'],['../classImage.html#abda271aa11b907dda8c8c8176684227d',1,'Image::Image(const Image &amp;orig)']]],
-  ['image_2ecpp_5',['image.cpp',['../image_8cpp.html',1,'']]],
-  ['image_2eh_6',['image.h',['../image_8h.html',1,'']]],
-  ['imageio_2ecpp_7',['imageIO.cpp',['../imageIO_8cpp.html',1,'']]],
-  ['imageio_2eh_8',['imageIO.h',['../imageIO_8h.html',1,'']]],
-  ['imagekind_9',['ImageKind',['../imageIO_8h.html#a18b6324755c82f3edc3da0a37066dc53',1,'imageIO.h']]],
-  ['imageop_2ecpp_10',['imageop.cpp',['../imageop_8cpp.html',1,'']]]
+  ['get_5fcols_2',['get_cols',['../classImage.html#ac52444a5ffbbc50d6dde8375ca5f45ea',1,'Image']]],
+  ['get_5fpixel_3',['get_pixel',['../classImage.html#aca8a815018d91548953cf571d778020e',1,'Image::get_pixel(int i, int j) const'],['../classImage.html#af844c47ac8a352b0e503e48a7af7ee35',1,'Image::get_pixel(int k) const']]],
+  ['get_5frows_4',['get_rows',['../classImage.html#a19fc606085e6e76dedf57b7de391dfdb',1,'Image']]]
 ];
