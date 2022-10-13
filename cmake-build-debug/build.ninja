@@ -55,6 +55,8 @@ build CMakeFiles/image.dir/estudiante/src/image.cpp.o: CXX_COMPILER__image_Debug
   INCLUDES = -I/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/include
   OBJECT_DIR = CMakeFiles/image.dir
   OBJECT_FILE_DIR = CMakeFiles/image.dir/estudiante/src
+  TARGET_COMPILE_PDB = CMakeFiles/image.dir/image.pdb
+  TARGET_PDB = libimage.pdb
 
 build CMakeFiles/image.dir/estudiante/src/imageop.cpp.o: CXX_COMPILER__image_Debug /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/src/imageop.cpp || cmake_object_order_depends_target_image
   DEP_FILE = CMakeFiles/image.dir/estudiante/src/imageop.cpp.o.d
@@ -62,6 +64,8 @@ build CMakeFiles/image.dir/estudiante/src/imageop.cpp.o: CXX_COMPILER__image_Deb
   INCLUDES = -I/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/include
   OBJECT_DIR = CMakeFiles/image.dir
   OBJECT_FILE_DIR = CMakeFiles/image.dir/estudiante/src
+  TARGET_COMPILE_PDB = CMakeFiles/image.dir/image.pdb
+  TARGET_PDB = libimage.pdb
 
 build CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o: CXX_COMPILER__image_Debug /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/src/imageIO.cpp || cmake_object_order_depends_target_image
   DEP_FILE = CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o.d
@@ -69,6 +73,8 @@ build CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o: CXX_COMPILER__image_Deb
   INCLUDES = -I/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/include
   OBJECT_DIR = CMakeFiles/image.dir
   OBJECT_FILE_DIR = CMakeFiles/image.dir/estudiante/src
+  TARGET_COMPILE_PDB = CMakeFiles/image.dir/image.pdb
+  TARGET_PDB = libimage.pdb
 
 build CMakeFiles/image.dir/estudiante/src/zoom.cpp.o: CXX_COMPILER__image_Debug /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/src/zoom.cpp || cmake_object_order_depends_target_image
   DEP_FILE = CMakeFiles/image.dir/estudiante/src/zoom.cpp.o.d
@@ -76,6 +82,8 @@ build CMakeFiles/image.dir/estudiante/src/zoom.cpp.o: CXX_COMPILER__image_Debug 
   INCLUDES = -I/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/include
   OBJECT_DIR = CMakeFiles/image.dir
   OBJECT_FILE_DIR = CMakeFiles/image.dir/estudiante/src
+  TARGET_COMPILE_PDB = CMakeFiles/image.dir/image.pdb
+  TARGET_PDB = libimage.pdb
 
 build CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o: CXX_COMPILER__image_Debug /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/src/subimagen.cpp || cmake_object_order_depends_target_image
   DEP_FILE = CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o.d
@@ -83,6 +91,8 @@ build CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o: CXX_COMPILER__image_D
   INCLUDES = -I/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/include
   OBJECT_DIR = CMakeFiles/image.dir
   OBJECT_FILE_DIR = CMakeFiles/image.dir/estudiante/src
+  TARGET_COMPILE_PDB = CMakeFiles/image.dir/image.pdb
+  TARGET_PDB = libimage.pdb
 
 build CMakeFiles/image.dir/estudiante/src/icono.cpp.o: CXX_COMPILER__image_Debug /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/src/icono.cpp || cmake_object_order_depends_target_image
   DEP_FILE = CMakeFiles/image.dir/estudiante/src/icono.cpp.o.d
@@ -90,6 +100,8 @@ build CMakeFiles/image.dir/estudiante/src/icono.cpp.o: CXX_COMPILER__image_Debug
   INCLUDES = -I/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/include
   OBJECT_DIR = CMakeFiles/image.dir
   OBJECT_FILE_DIR = CMakeFiles/image.dir/estudiante/src
+  TARGET_COMPILE_PDB = CMakeFiles/image.dir/image.pdb
+  TARGET_PDB = libimage.pdb
 
 
 # =============================================================================
@@ -104,8 +116,9 @@ build libimage.a: CXX_STATIC_LIBRARY_LINKER__image_Debug CMakeFiles/image.dir/es
   OBJECT_DIR = CMakeFiles/image.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/image.dir/image.pdb
   TARGET_FILE = libimage.a
-  TARGET_PDB = image.a.dbg
+  TARGET_PDB = libimage.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target negativo
@@ -122,6 +135,8 @@ build CMakeFiles/negativo.dir/estudiante/src/negativo.cpp.o: CXX_COMPILER__negat
   INCLUDES = -I/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/include
   OBJECT_DIR = CMakeFiles/negativo.dir
   OBJECT_FILE_DIR = CMakeFiles/negativo.dir/estudiante/src
+  TARGET_COMPILE_PDB = CMakeFiles/negativo.dir/
+  TARGET_PDB = negativo.pdb
 
 
 # =============================================================================
@@ -137,8 +152,9 @@ build negativo: CXX_EXECUTABLE_LINKER__negativo_Debug CMakeFiles/negativo.dir/es
   OBJECT_DIR = CMakeFiles/negativo.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/negativo.dir/
   TARGET_FILE = negativo
-  TARGET_PDB = negativo.dbg
+  TARGET_PDB = negativo.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target subimagen
@@ -155,6 +171,8 @@ build CMakeFiles/subimagen.dir/estudiante/src/subimagen.cpp.o: CXX_COMPILER__sub
   INCLUDES = -I/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/include
   OBJECT_DIR = CMakeFiles/subimagen.dir
   OBJECT_FILE_DIR = CMakeFiles/subimagen.dir/estudiante/src
+  TARGET_COMPILE_PDB = CMakeFiles/subimagen.dir/
+  TARGET_PDB = subimagen.pdb
 
 
 # =============================================================================
@@ -170,8 +188,9 @@ build subimagen: CXX_EXECUTABLE_LINKER__subimagen_Debug CMakeFiles/subimagen.dir
   OBJECT_DIR = CMakeFiles/subimagen.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/subimagen.dir/
   TARGET_FILE = subimagen
-  TARGET_PDB = subimagen.dbg
+  TARGET_PDB = subimagen.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target zoom
@@ -188,6 +207,8 @@ build CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.o: CXX_COMPILER__zoom_Debug /h
   INCLUDES = -I/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/include
   OBJECT_DIR = CMakeFiles/zoom.dir
   OBJECT_FILE_DIR = CMakeFiles/zoom.dir/estudiante/src
+  TARGET_COMPILE_PDB = CMakeFiles/zoom.dir/
+  TARGET_PDB = zoom.pdb
 
 
 # =============================================================================
@@ -203,8 +224,9 @@ build zoom: CXX_EXECUTABLE_LINKER__zoom_Debug CMakeFiles/zoom.dir/estudiante/src
   OBJECT_DIR = CMakeFiles/zoom.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/zoom.dir/
   TARGET_FILE = zoom
-  TARGET_PDB = zoom.dbg
+  TARGET_PDB = zoom.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target icono
@@ -221,6 +243,8 @@ build CMakeFiles/icono.dir/estudiante/src/icono.cpp.o: CXX_COMPILER__icono_Debug
   INCLUDES = -I/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/include
   OBJECT_DIR = CMakeFiles/icono.dir
   OBJECT_FILE_DIR = CMakeFiles/icono.dir/estudiante/src
+  TARGET_COMPILE_PDB = CMakeFiles/icono.dir/
+  TARGET_PDB = icono.pdb
 
 
 # =============================================================================
@@ -236,8 +260,9 @@ build icono: CXX_EXECUTABLE_LINKER__icono_Debug CMakeFiles/icono.dir/estudiante/
   OBJECT_DIR = CMakeFiles/icono.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/icono.dir/
   TARGET_FILE = icono
-  TARGET_PDB = icono.dbg
+  TARGET_PDB = icono.pdb
 
 
 #############################################
@@ -250,7 +275,7 @@ build doc_doxygen: phony CMakeFiles/doc_doxygen
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug && /snap/clion/206/bin/cmake/linux/bin/ccmake -S/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes -B/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug
+  COMMAND = cd /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug && /snap/clion/209/bin/cmake/linux/bin/ccmake -S/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes -B/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -262,7 +287,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug && /snap/clion/206/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes -B/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug
+  COMMAND = cd /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug && /snap/clion/209/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes -B/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -299,14 +324,14 @@ build all: phony libimage.a negativo subimagen zoom icono doc_doxygen
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../Doxyfile.in /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCInformation.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindDoxygen.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageMessage.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-C.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../Doxyfile.in /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCCompiler.cmake.in /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCCompilerABI.c /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCInformation.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXCompiler.cmake.in /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCompilerIdDetection.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineCCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineCXXCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineCompileFeatures.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineCompilerABI.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineCompilerId.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineSystem.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeFindBinUtils.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeParseImplicitIncludeInfo.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeParseImplicitLinkInfo.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeParseLibraryArchitecture.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystem.cmake.in /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeTestCCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeTestCXXCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeTestCompilerCommon.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/ADSP-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/ARMCC-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/ARMClang-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/AppleClang-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Borland-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Cray-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GHS-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-FindBinUtils.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/HP-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/IAR-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Intel-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/LCC-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/MSVC-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/NVHPC-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/PGI-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/PathScale-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/SCO-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/TI-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Watcom-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/XL-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/zOS-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/FindDoxygen.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageMessage.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Internal/FeatureTesting.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-Determine-CXX.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-C.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../Doxyfile.in /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCInformation.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindDoxygen.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageMessage.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-C.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux.cmake /snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../Doxyfile.in /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCCompiler.cmake.in /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCCompilerABI.c /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCInformation.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXCompiler.cmake.in /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCompilerIdDetection.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineCCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineCXXCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineCompileFeatures.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineCompilerABI.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineCompilerId.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineSystem.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeFindBinUtils.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeParseImplicitIncludeInfo.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeParseImplicitLinkInfo.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeParseLibraryArchitecture.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystem.cmake.in /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeTestCCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeTestCXXCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/CMakeTestCompilerCommon.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/ADSP-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/ARMCC-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/ARMClang-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/AppleClang-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Borland-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Cray-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GHS-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-FindBinUtils.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/HP-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/IAR-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Intel-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/LCC-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/MSVC-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/NVHPC-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/PGI-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/PathScale-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/SCO-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/TI-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Watcom-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/XL-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/zOS-C-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/FindDoxygen.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageMessage.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Internal/FeatureTesting.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-Determine-CXX.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-C.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux.cmake /snap/clion/209/bin/cmake/linux/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
 
 
 #############################################

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['save_16',['Save',['../classImage.html#adde1007dc6359087dae65fa8cae26448',1,'Image']]],
-  ['set_5fpixel_17',['set_pixel',['../classImage.html#a6e316f867fd3b67a75d78ca66bc12195',1,'Image::set_pixel(int i, int j, byte value)'],['../classImage.html#adf54cab55e991b8fac7d8043507588cb',1,'Image::set_pixel(int k, byte value)']]],
-  ['size_18',['size',['../classImage.html#a78068ea10fef9954ea0e91705997652d',1,'Image']]]
+  ['representación_20del_20tda_20imagen_15',['Representación del TDA Imagen',['../page_repImagen.html',1,'']]],
+  ['readimagekind_16',['ReadImageKind',['../imageIO_8h.html#aae1362cc5bced97d9e2c15aaa8ce313d',1,'ReadImageKind(const char *path):&#160;imageIO.cpp'],['../imageIO_8cpp.html#a6dea11974ea8c8c101628f3505960a39',1,'ReadImageKind(const char *nombre):&#160;imageIO.cpp']]],
+  ['readpgmimage_17',['ReadPGMImage',['../imageIO_8h.html#a6c7d905cd8ffaf23decf9d279f362a97',1,'ReadPGMImage(const char *path, int &amp;rows, int &amp;cols):&#160;imageIO.cpp'],['../imageIO_8cpp.html#a6c7d905cd8ffaf23decf9d279f362a97',1,'ReadPGMImage(const char *path, int &amp;rows, int &amp;cols):&#160;imageIO.cpp']]]
 ];

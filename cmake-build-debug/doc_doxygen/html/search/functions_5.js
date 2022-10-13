@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['readimagekind_35',['ReadImageKind',['../imageIO_8h.html#aae1362cc5bced97d9e2c15aaa8ce313d',1,'ReadImageKind(const char *path):&#160;imageIO.cpp'],['../imageIO_8cpp.html#a6dea11974ea8c8c101628f3505960a39',1,'ReadImageKind(const char *nombre):&#160;imageIO.cpp']]],
-  ['readpgmimage_36',['ReadPGMImage',['../imageIO_8h.html#a6c7d905cd8ffaf23decf9d279f362a97',1,'ReadPGMImage(const char *path, int &amp;rows, int &amp;cols):&#160;imageIO.cpp'],['../imageIO_8cpp.html#a6c7d905cd8ffaf23decf9d279f362a97',1,'ReadPGMImage(const char *path, int &amp;rows, int &amp;cols):&#160;imageIO.cpp']]]
+  ['operator_3d_40',['operator=',['../classImage.html#aeaa2d687caf48e3c72fc773c70a0e9fa',1,'Image']]]
 ];
