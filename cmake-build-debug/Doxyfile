@@ -1,6 +1,6 @@
 PROJECT_NAME           = "Práctica 1. Imágenes"
-OUTPUT_DIRECTORY       = /home/diegoos_03/Practica-1-ED/cmake-build-debug/doc_doxygen/
-INPUT                  = /home/diegoos_03/Practica-1-ED/estudiante/include /home/diegoos_03/Practica-1-ED/estudiante/src /home/diegoos_03/Practica-1-ED/estudiante/doc
+OUTPUT_DIRECTORY       = /home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug/doc_doxygen/
+INPUT                  = /home/diegoos_03/CLionProjects/Practica-1-ED/estudiante/include /home/diegoos_03/CLionProjects/Practica-1-ED/estudiante/src /home/diegoos_03/CLionProjects/Practica-1-ED/estudiante/doc
 GENERATE_LATEX         = NO
-IMAGE_PATH             = /home/diegoos_03/Practica-1-ED/estudiante/doc
+IMAGE_PATH             = /home/diegoos_03/CLionProjects/Practica-1-ED/estudiante/doc
 EXTRACT_PRIVATE        = NO

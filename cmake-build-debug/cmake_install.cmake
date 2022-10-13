@@ -1,4 +1,4 @@
-# Install script for directory: /home/diegoos_03/Practica-1-ED
+# Install script for directory: /home/diegoos_03/CLionProjects/Practica-1-ED
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/diegoos_03/Practica-1-ED/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

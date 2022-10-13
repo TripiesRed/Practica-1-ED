@@ -260,9 +260,31 @@ void set_pixel (int i, int j, byte value);
     void Invert();
 
     // Modifica el contraste de una Imagen .
+     /**
+     * @brief Ajusta el contraste de una imagen
+     * @param in1 Umbral inferior de la image de entrada
+     * @param in2 Umbral superior de la imagen de entrada
+     * @param out1 Umbral inferior de la imagen de salida
+     * @param out2 Umbral superior de la imagen de la salida
+     * @pre 0 <= ( @p in1, @p in2, @p out1, @p out2) <= 255
+     * @pre @p in1 < @p in2
+     * @pre @p out1 < @p out2
+     * @post La imagen queda modificada
+     */
     void AdjustContrast (byte in1, byte in2, byte out1, byte out2);
 
     // Calcula la media de los píxeles de una imagen entera o de un fragmento de ésta.
+    /**
+     * @brief Calcula la media de los píxeles de una imagen entera o de un fragmento de ésta
+     * @param i Fila de la esquina superior izquierda de la sección de imagen que se procesará
+     * @param j Columna de la esquina superior izquierda de la sección de imagen que se procesará
+     * @param height Altura de la sección de imagen que se procesará
+     * @param width Anchura de la sección de imagen que se procesará
+     * @note El par @b (i, j) determina unívocamente un punto de la imagen
+     * @return Devuleve un número real, calculado como la media aritmética de la sección especificada
+     * @pre 0 <= @p i + @p height < get_rows()
+     * @pre 0 <= @p j + @p width < get_cols()
+     */
     double Mean (int i, int j, int height, int width) const;
 
     // Genera un icono como reducción de una imagen.

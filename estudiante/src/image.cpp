@@ -270,3 +270,27 @@ Image Image::Subsample(int factor) const {
     return newimage;
 }
 
+void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
+    double quotient = (out2 - out1) / (in2 - in1);
+    for(int i = 0; i < get_rows(); i++){
+        for(int j = 0; j < get_cols(); j++){
+            byte new_byte = out1 + (quotient * (get_pixel(i, j) - in1));
+            set_pixel(i, j, new_byte);
+        }
+    }
+}
+
+double Image::Mean(int i, int j, int height, int width) const{
+    Image frag(Crop(i, j, height, width));
+    double sum = 0;
+
+    for(int f = 0; f < frag.get_rows(); f++){
+        for (int c = 0; c < frag.get_cols(); c++){
+            sum += get_pixel(f, c);
+        }
+    }
+
+    double mean = sum / (frag.get_cols() * frag.get_rows());
+    return mean;
+}
+
