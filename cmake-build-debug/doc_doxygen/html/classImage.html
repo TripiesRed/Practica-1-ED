@@ -124,11 +124,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6c9c1b3fef7795378f8a56fdd491ffa0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImage.html#a6c9c1b3fef7795378f8a56fdd491ffa0">Invert</a> ()</td></tr>
 <tr class="memdesc:a6c9c1b3fef7795378f8a56fdd491ffa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Genera una imagen con la tonalidad de colores inversa a partir de una imagen dada.  <a href="classImage.html#a6c9c1b3fef7795378f8a56fdd491ffa0">More...</a><br /></td></tr>
 <tr class="separator:a6c9c1b3fef7795378f8a56fdd491ffa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4884f3eb51efdecc005092534ba7e4ea"><td class="memItemLeft" align="right" valign="top"><a id="a4884f3eb51efdecc005092534ba7e4ea"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AdjustContrast</b> (byte in1, byte in2, byte out1, byte out2)</td></tr>
+<tr class="memitem:a4884f3eb51efdecc005092534ba7e4ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImage.html#a4884f3eb51efdecc005092534ba7e4ea">AdjustContrast</a> (byte in1, byte in2, byte out1, byte out2)</td></tr>
+<tr class="memdesc:a4884f3eb51efdecc005092534ba7e4ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajusta el contraste de una imagen.  <a href="classImage.html#a4884f3eb51efdecc005092534ba7e4ea">More...</a><br /></td></tr>
 <tr class="separator:a4884f3eb51efdecc005092534ba7e4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08ac7df75c7bc99da2b3abdc35719203"><td class="memItemLeft" align="right" valign="top"><a id="a08ac7df75c7bc99da2b3abdc35719203"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>Mean</b> (int i, int j, int height, int width) const</td></tr>
+<tr class="memitem:a08ac7df75c7bc99da2b3abdc35719203"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImage.html#a08ac7df75c7bc99da2b3abdc35719203">Mean</a> (int i, int j, int height, int width) const</td></tr>
+<tr class="memdesc:a08ac7df75c7bc99da2b3abdc35719203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula la media de los píxeles de una imagen entera o de un fragmento de ésta.  <a href="classImage.html#a08ac7df75c7bc99da2b3abdc35719203">More...</a><br /></td></tr>
 <tr class="separator:a08ac7df75c7bc99da2b3abdc35719203"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa00e596a67ec6130922c560049457985"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classImage.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImage.html#aa00e596a67ec6130922c560049457985">Subsample</a> (int factor) const</td></tr>
 <tr class="memdesc:aa00e596a67ec6130922c560049457985"><td class="mdescLeft">&#160;</td><td class="mdescRight">Genera una imagen reducida en función del valor introducido a partir de la imagen dada.  <a href="classImage.html#aa00e596a67ec6130922c560049457985">More...</a><br /></td></tr>
@@ -271,6 +271,63 @@ Guillermo Gómez </dd></dl>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4884f3eb51efdecc005092534ba7e4ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4884f3eb51efdecc005092534ba7e4ea">&#9670;&nbsp;</a></span>AdjustContrast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Image::AdjustContrast </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>in1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>in2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>out1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>out2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ajusta el contraste de una imagen. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in1</td><td>Umbral inferior de la image de entrada </td></tr>
+    <tr><td class="paramname">in2</td><td>Umbral superior de la imagen de entrada </td></tr>
+    <tr><td class="paramname">out1</td><td>Umbral inferior de la imagen de salida </td></tr>
+    <tr><td class="paramname">out2</td><td>Umbral superior de la imagen de la salida </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd>0 &lt;= ( <code>in1</code>, <code>in2</code>, <code>out1</code>, <code>out2</code>) &lt;= 255 </dd>
+<dd>
+<code>in1</code> &lt; <code>in2</code> </dd>
+<dd>
+<code>out1</code> &lt; <code>out2</code> </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>La imagen queda modificada </dd></dl>
+
+</div>
+</div>
 <a id="aad309b582d08dfd826c5106eaf80eb1e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aad309b582d08dfd826c5106eaf80eb1e">&#9670;&nbsp;</a></span>Crop()</h2>
 
@@ -507,6 +564,62 @@ La imagen original no se modifica </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><code>file_path</code> debe ser una ruta válida que contenga un fichero . pgm </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>Devuelve <b>true</b> si la imagen se carga con éxito y <b>false</b> en caso contrario. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>La imagen previamente almacenada en el objeto que llama a la función se destruye. </dd></dl>
+
+</div>
+</div>
+<a id="a08ac7df75c7bc99da2b3abdc35719203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08ac7df75c7bc99da2b3abdc35719203">&#9670;&nbsp;</a></span>Mean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Image::Mean </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcula la media de los píxeles de una imagen entera o de un fragmento de ésta. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>Fila de la esquina superior izquierda de la sección de imagen que se procesará </td></tr>
+    <tr><td class="paramname">j</td><td>Columna de la esquina superior izquierda de la sección de imagen que se procesará </td></tr>
+    <tr><td class="paramname">height</td><td>Altura de la sección de imagen que se procesará </td></tr>
+    <tr><td class="paramname">width</td><td>Anchura de la sección de imagen que se procesará </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>El par <b></b>(i, j) determina unívocamente un punto de la imagen </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Devuleve un número real, calculado como la media aritmética de la sección especificada </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>0 &lt;= <code>i</code> + <code>height</code> &lt; <a class="el" href="classImage.html#a19fc606085e6e76dedf57b7de391dfdb" title="Filas de la imagen .">get_rows()</a> </dd>
+<dd>
+0 &lt;= <code>j</code> + <code>width</code> &lt; <a class="el" href="classImage.html#ac52444a5ffbbc50d6dde8375ca5f45ea" title="Columnas de la imagen.">get_cols()</a> </dd></dl>
 
 </div>
 </div>

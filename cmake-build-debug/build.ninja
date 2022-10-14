@@ -103,6 +103,15 @@ build CMakeFiles/image.dir/estudiante/src/icono.cpp.o: CXX_COMPILER__image_Debug
   TARGET_COMPILE_PDB = CMakeFiles/image.dir/image.pdb
   TARGET_PDB = libimage.pdb
 
+build CMakeFiles/image.dir/estudiante/src/contraste.cpp.o: CXX_COMPILER__image_Debug /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/src/contraste.cpp || cmake_object_order_depends_target_image
+  DEP_FILE = CMakeFiles/image.dir/estudiante/src/contraste.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/include
+  OBJECT_DIR = CMakeFiles/image.dir
+  OBJECT_FILE_DIR = CMakeFiles/image.dir/estudiante/src
+  TARGET_COMPILE_PDB = CMakeFiles/image.dir/image.pdb
+  TARGET_PDB = libimage.pdb
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target image
@@ -111,7 +120,7 @@ build CMakeFiles/image.dir/estudiante/src/icono.cpp.o: CXX_COMPILER__image_Debug
 #############################################
 # Link the static library libimage.a
 
-build libimage.a: CXX_STATIC_LIBRARY_LINKER__image_Debug CMakeFiles/image.dir/estudiante/src/image.cpp.o CMakeFiles/image.dir/estudiante/src/imageop.cpp.o CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o CMakeFiles/image.dir/estudiante/src/zoom.cpp.o CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o CMakeFiles/image.dir/estudiante/src/icono.cpp.o
+build libimage.a: CXX_STATIC_LIBRARY_LINKER__image_Debug CMakeFiles/image.dir/estudiante/src/image.cpp.o CMakeFiles/image.dir/estudiante/src/imageop.cpp.o CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o CMakeFiles/image.dir/estudiante/src/zoom.cpp.o CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o CMakeFiles/image.dir/estudiante/src/icono.cpp.o CMakeFiles/image.dir/estudiante/src/contraste.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles/image.dir
   POST_BUILD = :
@@ -264,6 +273,42 @@ build icono: CXX_EXECUTABLE_LINKER__icono_Debug CMakeFiles/icono.dir/estudiante/
   TARGET_FILE = icono
   TARGET_PDB = icono.pdb
 
+# =============================================================================
+# Object build statements for EXECUTABLE target contraste
+
+
+#############################################
+# Order-only phony target for contraste
+
+build cmake_object_order_depends_target_contraste: phony || cmake_object_order_depends_target_image
+
+build CMakeFiles/contraste.dir/estudiante/src/contraste.cpp.o: CXX_COMPILER__contraste_Debug /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/src/contraste.cpp || cmake_object_order_depends_target_contraste
+  DEP_FILE = CMakeFiles/contraste.dir/estudiante/src/contraste.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/include
+  OBJECT_DIR = CMakeFiles/contraste.dir
+  OBJECT_FILE_DIR = CMakeFiles/contraste.dir/estudiante/src
+  TARGET_COMPILE_PDB = CMakeFiles/contraste.dir/
+  TARGET_PDB = contraste.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target contraste
+
+
+#############################################
+# Link the executable contraste
+
+build contraste: CXX_EXECUTABLE_LINKER__contraste_Debug CMakeFiles/contraste.dir/estudiante/src/contraste.cpp.o | libimage.a || libimage.a
+  FLAGS = -g
+  LINK_LIBRARIES = libimage.a
+  OBJECT_DIR = CMakeFiles/contraste.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/contraste.dir/
+  TARGET_FILE = contraste
+  TARGET_PDB = contraste.pdb
+
 
 #############################################
 # Utility command for doc_doxygen
@@ -315,7 +360,7 @@ build image: phony libimage.a
 #############################################
 # Folder: /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug
 
-build all: phony libimage.a negativo subimagen zoom icono doc_doxygen
+build all: phony libimage.a negativo subimagen zoom icono contraste doc_doxygen
 
 # =============================================================================
 # Built-in targets

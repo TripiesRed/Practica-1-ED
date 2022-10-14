@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['empty_1',['Empty',['../classImage.html#a0866c8c2e288fd753168a9c691ae17d2',1,'Image']]]
+  ['crop_1',['Crop',['../classImage.html#aad309b582d08dfd826c5106eaf80eb1e',1,'Image']]]
 ];
