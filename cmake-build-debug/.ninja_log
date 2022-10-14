@@ -26,3 +26,13 @@
 1	314	1665761065023184688	CMakeFiles/image.dir/estudiante/src/contraste.cpp.o	f80b0d09b07116c1
 314	321	1665761065031184286	libimage.a	532ef67f91929246
 321	362	1665761065071182277	zoom	8dc3d7f43beb67da
+1	206	1665764564134810104	CMakeFiles/image.dir/estudiante/src/icono.cpp.o	65a7bbea3b9c203e
+1	207	1665764564138810458	CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o	f02196d2017d5fa8
+1	208	1665764564138810458	CMakeFiles/image.dir/estudiante/src/contraste.cpp.o	f80b0d09b07116c1
+0	208	1665764564138810458	CMakeFiles/image.dir/estudiante/src/imageop.cpp.o	a9672f1c10f89383
+1	209	1665764564138810458	CMakeFiles/image.dir/estudiante/src/zoom.cpp.o	479746fd41dcface
+1	212	1665764564142810811	CMakeFiles/contraste.dir/estudiante/src/contraste.cpp.o	28314993e03c7800
+1	220	1665764564150811518	CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o	5d12f5f63b9e78cf
+0	239	1665764564170813285	CMakeFiles/image.dir/estudiante/src/image.cpp.o	b0ab83c95c94579e
+239	244	1665764564174813638	libimage.a	532ef67f91929246
+244	281	1665764564210816820	contraste	949c951b66efc03f

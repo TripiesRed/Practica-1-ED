@@ -271,9 +271,9 @@ Image Image::Subsample(int factor) const {
 }
 
 void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
-    double quotient1 = round(out1 / in1);
-    double quotient2 = round((out2 - out1) / (in2 - in1));
-    double quotient3 = round((255 - out2) / ( 255 - in2));
+    double quotient1 = lround(out1 / in1);
+    double quotient2 = lround((out2 - out1) / (in2 - in1));
+    double quotient3 = lround((255 - out2) / (255 - in2));
     byte new_byte;
 
     for(int i = 0; i < get_rows(); i++){
