@@ -62,7 +62,7 @@ $(function() {
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Related Pages</div>  </div>
+<div class="title">Related Pages and Executables</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock">Here is a list of all related documentation pages:</div><div class="directory">
@@ -71,6 +71,109 @@ $(function() {
 </table>
 </div><!-- directory -->
 </div><!-- contents -->
+
+<h2 class="personalized"><a class="anchor"  ></a>
+ Negativo:</h2>
+<p>Calcula el negativo de una imagen</p>
+<blockquote class="doxtable">
+ <p><b>negativo</b> &lt;FichImagenOriginal&gt; &lt;FichImagenDestino&gt; </p>
+</blockquote>
+
+<dl class="params"><dt>Parameters</dt><dd>
+ <table class="params">
+  <tr><td class="paramname">&lt;FichImagenOriginal&gt;</td><td>Imagen PGM a la que se va a calcular </td></tr>
+  <tr><td class="paramname">&lt;FichImagenDestino&gt;</td><td>Imagen PGM resultado de calcular el negativo </td></tr>
+ </table>
+</dd>
+</dl>
+
+<br/><br/>
+
+<h2 class="personalized" ><a class="anchor" ></a>
+ Subimagen:</h2>
+<p>Obtiene un fragmento (subimagen) de una imagen</p>
+<blockquote class="doxtable">
+ <p><b>subimagen</b> &lt;fich_orig&gt; &lt;fich_rdo&gt;  &lt;fila&gt;  &lt;col&gt;  &lt;filas_sub&gt;  &lt;cols_sub&gt; </p>
+</blockquote>
+
+<dl class="params"><dt>Parameters</dt><dd>
+ <table class="params">
+  <tr><td class="paramname">&lt;fich_orig&gt;</td><td>Imagen PGM de la que se obtendrá la subimagen </td></tr>
+  <tr><td class="paramname">&lt;fich_rdo&gt;</td><td>Imagen PGM resultado del fragmento </td></tr>
+  <tr><td class="paramname">&lt;fila&gt;</td><td>Especifica (junto con <i>col</i> la coordenada (sobre la imagen original) de la esquina superior izquierda
+   de la subimagen que se va a extraer</td></tr>
+  <tr><td class="paramname">&lt;col&gt;</td><td>Especifica (junto con <i>fila</i> la coordenada (sobre la imagen original) de la esquina superior izquierda
+   de la subimagen que se va a extraer</td></tr>
+  <tr><td class="paramname">&lt;filas_sub&gt;</td><td>Indica el número de filas de la submigen que se va a extraer</td></tr>
+  <tr><td class="paramname">&lt;cols_sub&gt;</td><td>Indica el número de filas de la submigen que se va a extraer</td></tr>
+ </table>
+</dd>
+</dl>
+
+<br/><br/>
+
+<h2 class="personalized" ><a class="anchor" ></a>
+ Zoom:</h2>
+<p>Realiza un zoom 2X de una porción de la imagen mediante un simple procedimiento de
+ interpolación</p>
+<blockquote class="doxtable">
+ <p><b>zoom</b> &lt;fich_orig&gt; &lt;fich_rdo&gt;  &lt;fila&gt;  &lt;col&gt; &lt;lado&gt;</p>
+</blockquote>
+
+<dl class="params"><dt>Parameters</dt><dd>
+ <table class="params">
+  <tr><td class="paramname">&lt;fich_orig&gt;</td><td>Imagen PGM a la que se aplicará el zoom</td></tr>
+  <tr><td class="paramname">&lt;fich_rdo&gt;</td><td>Imagen PGM ampliada </td></tr>
+  <tr><td class="paramname">&lt;fila&gt;</td><td>Especifica (junto con <i>col</i> la coordenada (sobre la imagen original) de la esquina superior izquierda
+   de la imagen ampliada que se va a extraer</td></tr>
+  <tr><td class="paramname">&lt;col&gt;</td><td>Especifica (junto con <i>fila</i> la coordenada (sobre la imagen original) de la esquina superior izquierda
+   de la imagen ampliada que se va a extraer</td></tr>
+  <tr><td class="paramname">&lt;lado&gt;</td><td>Indica el tamaño del lado del cuadrado. El cuadrado descrito debe estar totalmente incluído en la
+   imagen</td></tr>
+ </table>
+</dd>
+</dl>
+
+<br/><br/>
+
+<h2 class="personalized" ><a class="anchor" ></a>
+ Icono:</h2>
+<p>Crea una imagen de un tamaño muy reducido a partir de una imagen original</p>
+<blockquote class="doxtable">
+ <p><b>icono</b> &lt;fich_orig&gt; &lt;fich_rdo&gt;  &lt;factor&gt; </p>
+</blockquote>
+
+<dl class="params"><dt>Parameters</dt><dd>
+ <table class="params">
+  <tr><td class="paramname">&lt;fich_orig&gt;</td><td>Imagen PGM de la que se obtendrá la subimagen </td></tr>
+  <tr><td class="paramname">&lt;fich_rdo&gt;</td><td>Imagen PGM resultado del fragmento </td></tr>
+  <tr><td class="paramname">&lt;factor&gt;</td><td>Factor de reducción. La imagen resultante tendrá floor(filas/factor) x floor(cols/factor)</td></tr>
+ </table>
+</dd>
+</dl><br/><br/>
+
+<h2 class="personalized"><a class="anchor" ></a>
+ Contraste:</h2>
+<p>Genera una imagen de niveles de gris con más contraste que la original mediante el estiramiento de su histograma</p>
+<blockquote class="doxtable">
+ <p><b>contraste</b> &lt;fich_orig&gt; &lt;fich_rdo&gt;  &lt;e1&gt;  &lt;e2&gt;  &lt;s1&gt;  &lt;s2&gt; </p>
+</blockquote>
+
+<dl class="params"><dt>Parameters</dt><dd>
+ <table class="params">
+  <tr><td class="paramname">&lt;fich_orig&gt;</td><td>Imagen PGM de la que se obtendrá la subimagen </td></tr>
+  <tr><td class="paramname">&lt;fich_rdo&gt;</td><td>Imagen PGM resultado del fragmento </td></tr>
+  <tr><td class="paramname">&lt;e1&gt;</td><td>Umbral inferior de la imagen de entrada</td></tr>
+  <tr><td class="paramname">&lt;e2&gt;</td><td>Umbral superior de la imagen de entrada</td></tr>
+  <tr><td class="paramname">&lt;s1&gt;</td><td>Umbral inferior de la imagen de salida</td></tr>
+  <tr><td class="paramname">&lt;s2&gt;</td><td>Umbral superior de la imagen de salida</td></tr>
+ </table>
+</dd>
+</dl>
+
+<br/><br/>
+
+
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
