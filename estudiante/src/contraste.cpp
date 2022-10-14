@@ -71,7 +71,7 @@ int main (int argc, char *argv[]){
         cout  << "La imagen se guardo en " << destino << endl;
     else{
         cerr << "Error: No pudo guardarse la imagen." << endl;
-        cerr << "Terminando la ejecucion del programa." << endl;
+        cerr << "Terminando la ejecucion del programa." << endl << endl;
         return 1;
     }
 
