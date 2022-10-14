@@ -32,8 +32,6 @@ int main (int argc, char *argv[]){
     s1 = stoi(argv[5]);
     s2 = stoi(argv[6]);
 
-    cout << endl << endl << e1 << endl << endl;
-
 
     // Mostramos argumentos
     cout << endl;

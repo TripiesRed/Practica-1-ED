@@ -271,10 +271,25 @@ Image Image::Subsample(int factor) const {
 }
 
 void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
-    double quotient = (out2 - out1) / (in2 - in1);
+    double quotient1 = round(out1 / in1);
+    double quotient2 = round((out2 - out1) / (in2 - in1));
+    double quotient3 = round((255 - out2) / ( 255 - in2));
+    byte new_byte;
+
     for(int i = 0; i < get_rows(); i++){
         for(int j = 0; j < get_cols(); j++){
-            byte new_byte = out1 + (quotient * (get_pixel(i, j) - in1));
+
+            if(get_pixel(i, j) >= 0 && get_pixel(i, j) <= in1){
+                new_byte = quotient1 * get_pixel(i, j);
+            }
+            else{
+                if(get_pixel(i, j) > in1 && get_pixel(i, j) <= in2){
+                    new_byte = out1 + (quotient2 * (get_pixel(i, j) - in1));
+                }
+                else{
+                    new_byte = out2 + (quotient3 * (get_pixel(i, j) - in2));
+                }
+            }
             set_pixel(i, j, new_byte);
         }
     }
