@@ -6,7 +6,7 @@ set(BASE_FOLDER estudiante)
 
 include_directories(${BASE_FOLDER}/include)
 #add_library(imageio ${BASE_FOLDER}/src/imageio.cpp)
-add_library(image ${BASE_FOLDER}/src/image.cpp ${BASE_FOLDER}/src/imageop.cpp ${BASE_FOLDER}/src/imageIO.cpp estudiante/src/zoom.cpp estudiante/src/subimagen.cpp estudiante/src/icono.cpp)
+add_library(image ${BASE_FOLDER}/src/image.cpp ${BASE_FOLDER}/src/imageop.cpp ${BASE_FOLDER}/src/imageIO.cpp estudiante/src/zoom.cpp estudiante/src/subimagen.cpp estudiante/src/icono.cpp estudiante/src/contraste.cpp)
 
 if (EXISTS ${CMAKE_SOURCE_DIR}/${BASE_FOLDER}/src/negativo.cpp)
 add_executable(negativo ${BASE_FOLDER}/src/negativo.cpp)
