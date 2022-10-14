@@ -13,14 +13,14 @@ using namespace std;
 int main (int argc, char *argv[]){
 
     char *origen, *destino; // nombres de los ficheros
-    Image image;
+    Image imagen;
     int e1, e2, s1, s2;  // valores para ajustar el contraste
 
 
     // Comprobar validez de la llamada
     if (argc != 7){
         cerr << "Error: Numero incorrecto de parametros.\n";
-        cerr << "Uso: negativo <FichImagenOriginal> <FichImagenDestino> <e1> <e2> <s1> <s2>\n";
+        cerr << "Uso: contraste <FichImagenOriginal> <FichImagenDestino> <e1> <e2> <s1> <s2>\n";
         exit (1);
     }
 
@@ -39,7 +39,7 @@ int main (int argc, char *argv[]){
     cout << "Fichero resultado: " << destino << endl;
 
     // Leer la imagen del fichero de entrada
-    if (!image.Load(origen)){
+    if (!imagen.Load(origen)){
         cerr << "Error: No pudo leerse la imagen." << endl;
         cerr << "Terminando la ejecucion del programa." << endl;
         return 1;
@@ -48,7 +48,7 @@ int main (int argc, char *argv[]){
     // Mostrar los parametros de la Imagen
     cout << endl;
     cout << "Dimensiones de " << origen << ":" << endl;
-    cout << "   Imagen   = " << image.get_rows()  << " filas x " << image.get_cols() << " columnas " << endl;
+    cout << "   Imagen   = " << imagen.get_rows()  << " filas x " << imagen.get_cols() << " columnas " << endl;
 
     // Mostramos los parámetros para realizar el ajuste
     cout << endl;
@@ -58,16 +58,16 @@ int main (int argc, char *argv[]){
     cout << "\t Umbral inferior de la imagen de salida: " << s1 << endl;
     cout << "\t Umbral superior de la imagen de salida: " << s2 << endl;
 
-    Image newimage(image);
-    newimage.AdjustContrast(e1, e2, s1, s2);
+    Image newimagen(imagen);
+    newimagen.AdjustContrast(e1, e2, s1, s2);
 
     // Mostrar los parametros de la Imagen Resultado
     cout << endl;
     cout << "Dimensiones de " << destino << ":" << endl;
-    cout << "Imagen Generada  = " << newimage.get_rows()  << " filas x " << newimage.get_cols() << " columnas " << endl;
+    cout << "Imagen Generada  = " << newimagen.get_rows()  << " filas x " << newimagen.get_cols() << " columnas " << endl;
 
     // Guardar la imagen resultado en el fichero
-    if (newimage.Save(destino))
+    if (newimagen.Save(destino))
         cout  << "La imagen se guardo en " << destino << endl;
     else{
         cerr << "Error: No pudo guardarse la imagen." << endl;
