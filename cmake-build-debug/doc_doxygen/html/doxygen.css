@@ -1765,7 +1765,7 @@ u {
 	transition: all 1s;
 }
 .personalized:hover{
-	color: darkblue;
+	color: dodgerblue;
 	font-size: 200%;
 	text-shadow: slategray 2px 2px 2px;
 }
@@ -1777,6 +1777,7 @@ u {
 	position: absolute;
 	right: 2%;
 	z-index: 2;
+	transition: all 2s;
 }
 
 
@@ -1787,7 +1788,7 @@ u {
 	right: 2%;
 	box-shadow: #808080 2px 2px 2px;
 	cursor: pointer;
-	transition: all 1s;
+
 }
 
 .ilustrations:hover{
@@ -1797,4 +1798,16 @@ u {
 #instruction{
 	border: solid 2px dodgerblue;
 	padding: 5px;
+}
+
+#content{
+	padding: 20px;
+}
+
+.doxtable:hover{
+	padding-left: 10%;
+}
+
+.doxtable{
+	transition: all 1.5s;
 }
