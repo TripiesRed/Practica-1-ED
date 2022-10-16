@@ -307,7 +307,7 @@ void set_pixel (int i, int j, byte value);
      * @param ncol Número de columna donde se coloca la esquina izquierda de la subimagen
      * @param height Altura de la subimagen = número de filas
      * @param width Anchura de la subimagen = número de columnas
-     * @pre nrow,ncol,height,width >= 0
+     * @pre @p nrow, @p ncol,@p height,@p width >= 0
      * @return Devuelve la subimagen
      * @post En caso de que el tamaño de la subimagen sobrepase los límites de la imagen original,
      * se ajustará su tamaño.
@@ -315,6 +315,7 @@ void set_pixel (int i, int j, byte value);
      */
     Image Crop(int nrow, int ncol, int height, int width) const;
 
+    // Aumenta una imagen a x2
     /**
      * @brief Genera una imagen aumentada a doble de tamaño a partir de una imagen dada
      * @return Devuelve la imagen modificada
@@ -323,6 +324,10 @@ void set_pixel (int i, int j, byte value);
     Image Zoom2X() const;
 
     // Baraja pseudoaleatoriamente las filas de una imagen.
+    /**
+     * @brief Modifica el orden de las filas de la imagen tomando un coprimo del número de filas de la misma
+     * @post La imagen original sí se modifica
+     */
     void ShuffleRows();
 
 } ;

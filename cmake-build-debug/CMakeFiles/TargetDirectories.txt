@@ -4,6 +4,8 @@
 /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug/CMakeFiles/zoom.dir
 /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug/CMakeFiles/icono.dir
 /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug/CMakeFiles/contraste.dir
+/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug/CMakeFiles/barajar.dir
+/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug/CMakeFiles/eficiencia.dir
 /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug/CMakeFiles/doc_doxygen.dir
 /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug/CMakeFiles/rebuild_cache.dir
