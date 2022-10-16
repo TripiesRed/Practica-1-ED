@@ -1765,21 +1765,9 @@ u {
 	transition: all 1s;
 }
 .personalized:hover{
-	color: cornflowerblue;
+	color: darkblue;
 	font-size: 200%;
-	text-shadow: darkgray 2px 2px 2px;
-}
-
-.doxtable{
-	transition: all 2s;
-}
-
-.doxtable:hover{
-	padding-left: 5%;
-}
-
-#content{
-	padding: 15px;
+	text-shadow: slategray 2px 2px 2px;
 }
 .ilustrations {
 	display: block;

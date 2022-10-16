@@ -291,7 +291,7 @@ void set_pixel (int i, int j, byte value);
     /**
      * @brief Genera una imagen reducida en función del valor introducido a partir de la imagen dada
      * @param factor Valor de reducción de la imagen (ej: factor=2 => width= ncols/2 )
-     * @pre factor > 0
+     * @pre @p factor > 0
      * @return Devuelve la imagen modificada
      * @post La dimensión de la imagen modificada será int(nfils/factor) x int(ncols/factor). No se tienen
      * en cuenta los decimales.
