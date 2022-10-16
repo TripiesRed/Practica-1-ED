@@ -250,7 +250,7 @@ Image Image::Subsample(int factor) const {
     int newwidth=get_cols()/factor;
     Image newimage (newheight,newwidth);
     byte valor_aux;
-    int contfils=0, contcols=0,niter=0;
+    int contfils=0, contcols=0, niter=0;
     double total=0;
 
     //Asignación de pixeles
@@ -263,8 +263,6 @@ Image Image::Subsample(int factor) const {
                     total+= (int)get_pixel(k,l);
                     niter++;
                 }
-
-            //cout << (int)valor_aux << " " << total << " " << niter << " " << (valor_aux) << " " << endl;
 
             valor_aux= lround(total/niter);
             newimage.set_pixel(i,j,valor_aux);
@@ -341,7 +339,7 @@ void Image::ShuffleRows(void) {
 
     for (int i = 0; i < fils; i++){
         newfil = i*P % fils;
-        newimage[newfil]=img[i];
+        newimage[i]=img[newfil];
     }
 
    for (int i = 0; i < fils; i++)
