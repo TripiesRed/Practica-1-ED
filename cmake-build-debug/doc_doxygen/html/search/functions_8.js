@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['writepgmimage_47',['WritePGMImage',['../imageIO_8h.html#afa4e9ec3a7e42244a7b3906c90e934e4',1,'WritePGMImage(const char *path, const unsigned char *datos, const int rows, const int cols):&#160;imageIO.cpp'],['../imageIO_8cpp.html#aaa77c6f72e62cb8273775dcfe7a49f1f',1,'WritePGMImage(const char *nombre, const unsigned char *datos, const int rows, const int cols):&#160;imageIO.cpp']]]
+  ['readimagekind_45',['ReadImageKind',['../imageIO_8h.html#aae1362cc5bced97d9e2c15aaa8ce313d',1,'ReadImageKind(const char *path):&#160;imageIO.cpp'],['../imageIO_8cpp.html#a6dea11974ea8c8c101628f3505960a39',1,'ReadImageKind(const char *nombre):&#160;imageIO.cpp']]],
+  ['readpgmimage_46',['ReadPGMImage',['../imageIO_8h.html#a6c7d905cd8ffaf23decf9d279f362a97',1,'ReadPGMImage(const char *path, int &amp;rows, int &amp;cols):&#160;imageIO.cpp'],['../imageIO_8cpp.html#a6c7d905cd8ffaf23decf9d279f362a97',1,'ReadPGMImage(const char *path, int &amp;rows, int &amp;cols):&#160;imageIO.cpp']]]
 ];
