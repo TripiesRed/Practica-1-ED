@@ -195,6 +195,32 @@ contraste/fast:
 .PHONY : contraste/fast
 
 #=============================================================================
+# Target rules for targets named barajar
+
+# Build rule for target.
+barajar: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 barajar
+.PHONY : barajar
+
+# fast build rule for target.
+barajar/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/barajar.dir/build.make CMakeFiles/barajar.dir/build
+.PHONY : barajar/fast
+
+#=============================================================================
+# Target rules for targets named eficiencia
+
+# Build rule for target.
+eficiencia: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 eficiencia
+.PHONY : eficiencia
+
+# fast build rule for target.
+eficiencia/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/eficiencia.dir/build.make CMakeFiles/eficiencia.dir/build
+.PHONY : eficiencia/fast
+
+#=============================================================================
 # Target rules for targets named doc_doxygen
 
 # Build rule for target.
@@ -207,29 +233,59 @@ doc_doxygen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/build
 .PHONY : doc_doxygen/fast
 
-estudiante/src/analisis_eficiencia2.o: estudiante/src/analisis_eficiencia2.cpp.o
-.PHONY : estudiante/src/analisis_eficiencia2.o
+estudiante/src/analisis_eficiencia.o: estudiante/src/analisis_eficiencia.cpp.o
+.PHONY : estudiante/src/analisis_eficiencia.o
 
 # target to build an object file
-estudiante/src/analisis_eficiencia2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/analisis_eficiencia2.cpp.o
-.PHONY : estudiante/src/analisis_eficiencia2.cpp.o
+estudiante/src/analisis_eficiencia.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/analisis_eficiencia.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/eficiencia.dir/build.make CMakeFiles/eficiencia.dir/estudiante/src/analisis_eficiencia.cpp.o
+.PHONY : estudiante/src/analisis_eficiencia.cpp.o
 
-estudiante/src/analisis_eficiencia2.i: estudiante/src/analisis_eficiencia2.cpp.i
-.PHONY : estudiante/src/analisis_eficiencia2.i
+estudiante/src/analisis_eficiencia.i: estudiante/src/analisis_eficiencia.cpp.i
+.PHONY : estudiante/src/analisis_eficiencia.i
 
 # target to preprocess a source file
-estudiante/src/analisis_eficiencia2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/analisis_eficiencia2.cpp.i
-.PHONY : estudiante/src/analisis_eficiencia2.cpp.i
+estudiante/src/analisis_eficiencia.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/analisis_eficiencia.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/eficiencia.dir/build.make CMakeFiles/eficiencia.dir/estudiante/src/analisis_eficiencia.cpp.i
+.PHONY : estudiante/src/analisis_eficiencia.cpp.i
 
-estudiante/src/analisis_eficiencia2.s: estudiante/src/analisis_eficiencia2.cpp.s
-.PHONY : estudiante/src/analisis_eficiencia2.s
+estudiante/src/analisis_eficiencia.s: estudiante/src/analisis_eficiencia.cpp.s
+.PHONY : estudiante/src/analisis_eficiencia.s
 
 # target to generate assembly for a file
-estudiante/src/analisis_eficiencia2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/analisis_eficiencia2.cpp.s
-.PHONY : estudiante/src/analisis_eficiencia2.cpp.s
+estudiante/src/analisis_eficiencia.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/analisis_eficiencia.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/eficiencia.dir/build.make CMakeFiles/eficiencia.dir/estudiante/src/analisis_eficiencia.cpp.s
+.PHONY : estudiante/src/analisis_eficiencia.cpp.s
+
+estudiante/src/barajar.o: estudiante/src/barajar.cpp.o
+.PHONY : estudiante/src/barajar.o
+
+# target to build an object file
+estudiante/src/barajar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/barajar.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/barajar.dir/build.make CMakeFiles/barajar.dir/estudiante/src/barajar.cpp.o
+.PHONY : estudiante/src/barajar.cpp.o
+
+estudiante/src/barajar.i: estudiante/src/barajar.cpp.i
+.PHONY : estudiante/src/barajar.i
+
+# target to preprocess a source file
+estudiante/src/barajar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/barajar.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/barajar.dir/build.make CMakeFiles/barajar.dir/estudiante/src/barajar.cpp.i
+.PHONY : estudiante/src/barajar.cpp.i
+
+estudiante/src/barajar.s: estudiante/src/barajar.cpp.s
+.PHONY : estudiante/src/barajar.s
+
+# target to generate assembly for a file
+estudiante/src/barajar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/barajar.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/barajar.dir/build.make CMakeFiles/barajar.dir/estudiante/src/barajar.cpp.s
+.PHONY : estudiante/src/barajar.cpp.s
 
 estudiante/src/contraste.o: estudiante/src/contraste.cpp.o
 .PHONY : estudiante/src/contraste.o
@@ -444,15 +500,20 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... doc_doxygen"
+	@echo "... barajar"
 	@echo "... contraste"
+	@echo "... eficiencia"
 	@echo "... icono"
 	@echo "... image"
 	@echo "... negativo"
 	@echo "... subimagen"
 	@echo "... zoom"
-	@echo "... estudiante/src/analisis_eficiencia2.o"
-	@echo "... estudiante/src/analisis_eficiencia2.i"
-	@echo "... estudiante/src/analisis_eficiencia2.s"
+	@echo "... estudiante/src/analisis_eficiencia.o"
+	@echo "... estudiante/src/analisis_eficiencia.i"
+	@echo "... estudiante/src/analisis_eficiencia.s"
+	@echo "... estudiante/src/barajar.o"
+	@echo "... estudiante/src/barajar.i"
+	@echo "... estudiante/src/barajar.s"
 	@echo "... estudiante/src/contraste.o"
 	@echo "... estudiante/src/contraste.i"
 	@echo "... estudiante/src/contraste.s"

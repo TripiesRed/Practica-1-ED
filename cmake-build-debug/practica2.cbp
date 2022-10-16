@@ -293,6 +293,98 @@
 					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="barajar">
+				<Option output="/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug/barajar" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/diegoos_03/CLionProjects/Practica-1-ED/estudiante/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 barajar"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="barajar/fast">
+				<Option output="/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug/barajar" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/diegoos_03/CLionProjects/Practica-1-ED/estudiante/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 barajar/fast"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="eficiencia">
+				<Option output="/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug/eficiencia" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/diegoos_03/CLionProjects/Practica-1-ED/estudiante/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 eficiencia"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="eficiencia/fast">
+				<Option output="/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug/eficiencia" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/diegoos_03/CLionProjects/Practica-1-ED/estudiante/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 eficiencia/fast"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="doc_doxygen">
 				<Option working_dir="/home/diegoos_03/CLionProjects/Practica-1-ED/cmake-build-debug"/>
 				<Option type="4"/>
@@ -324,8 +416,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/diegoos_03/CLionProjects/Practica-1-ED/estudiante/src/analisis_eficiencia2.cpp">
+		<Unit filename="/home/diegoos_03/CLionProjects/Practica-1-ED/estudiante/src/analisis_eficiencia.cpp">
 			<Option target="image"/>
+			<Option target="eficiencia"/>
+		</Unit>
+		<Unit filename="/home/diegoos_03/CLionProjects/Practica-1-ED/estudiante/src/barajar.cpp">
+			<Option target="image"/>
+			<Option target="barajar"/>
 		</Unit>
 		<Unit filename="/home/diegoos_03/CLionProjects/Practica-1-ED/estudiante/src/contraste.cpp">
 			<Option target="image"/>
