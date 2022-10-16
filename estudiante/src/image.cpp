@@ -271,36 +271,33 @@ Image Image::Subsample(int factor) const {
 }
 
 void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
-    double quotient1 = out1 / in1;
-    double quotient2_num = out2 - out1;
-    double quotient2_den = in2 - in1;
-    double quotient2 = quotient2_num / quotient2_den;
-    double quotient3_num = 255 - out2;
-    double quotient3_den = 255 - in2;
-    double quotient3 = quotient3_num / quotient3_den;
-    int new_byte;
+    double quotient1 ;
+    if (in1!=0) quotient1= (double)out1 / (double)in1;
+    else quotient1=0;
 
-    for(int i = 0; i < get_rows(); i++){
-        for(int j = 0; j < get_cols(); j++){
+    double quotient2 = (double)(out2 - out1) / (double)(in2 - in1);
 
-            if((get_pixel(i, j) >= 0) && (get_pixel(i, j) < in1)){
-                new_byte = round(quotient1 * get_pixel(i, j));
+    double quotient3;
+    if (in2!=255) quotient3= (double)(255 - out2) / (double)(255 - in2);
+    else quotient3=0;
 
+    byte new_byte=0;
+
+    for(int k = 0; k < get_rows()*get_cols(); k++){
+
+        if(get_pixel(k) >= 0 && get_pixel(k) < in1){
+            new_byte = lround(quotient1 * get_pixel(k));
+        }
+        else{
+            if(get_pixel(k) >= in1 && get_pixel(k) <= in2){
+                new_byte = lround(out1 + (quotient2 * (get_pixel(k) - in1)));
             }
             else{
-                if(get_pixel(i, j) <= in2){
-                    new_byte = round(out1 + (quotient2 * (get_pixel(i, j) - in1)));
-                    if(i == 0 && j == 13){
-                        cout << endl << get_pixel(i, j) << endl;
-                    }
-                }
-
-                else{
-                    new_byte = round(out2 + (quotient3 * (get_pixel(i, j) - in2)));
-                }
+                new_byte = lround(out2 + (quotient3 * (get_pixel(k) - in2)));
             }
-            set_pixel(i, j, new_byte);
         }
+        set_pixel(k, new_byte);
+
     }
 }
 
