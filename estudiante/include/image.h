@@ -297,6 +297,7 @@ void set_pixel (int i, int j, byte value);
      * en cuenta los decimales.
      * @post La imagen original no se modifica
      */
+
     Image Subsample(int factor) const;
 
     // Genera una subimagen.
