@@ -22,15 +22,17 @@ void Image::Allocate(int nrows, int ncols, byte * buffer){
     rows = nrows;
     cols = ncols;
 
-    img = new byte * [rows];
+    img = new byte*[rows];
 
-    if (buffer != 0)
-        img[0] = buffer;
-    else
-        img[0] = new byte [rows * cols];
+    for (int i=0; i < rows; i++){
+        img[i] = new byte [cols];
 
-    for (int i=1; i < rows; i++)
-        img[i] = img[i-1] + cols;
+        if (buffer != 0)
+            for(int j = 0; j < cols; j++)
+                img[i][j] = buffer[i*rows + j];
+    }
+
+
 }
 
 // Función auxiliar para inicializar imágenes con valores por defecto o a partir de un buffer de datos
@@ -57,7 +59,8 @@ bool Image::Empty() const{
 
 void Image::Destroy(){
     if (!Empty()){
-        delete [] img[0];
+        for (int i = 0; i < get_rows(); i++)
+            delete [] img[i];
         delete [] img;
     }
 }
@@ -87,7 +90,7 @@ Image::Image(){
 // Constructores con parámetros
 Image::Image (int nrows, int ncols, byte value){
     Initialize(nrows, ncols);
-    for (int k=0; k<rows*cols; k++) set_pixel(k,value);
+    for (int k=0; k<rows*cols; k++)set_pixel(k, value);
 }
 
 bool Image::Load (const char * file_path) {
@@ -142,17 +145,28 @@ byte Image::get_pixel (int i, int j) const {
 
 // This doesn't work if representation changes
 void Image::set_pixel (int k, byte value) {
-    img[0][k] = value;
+    int fils = k/get_cols();
+    int cols = k%get_cols();
+    set_pixel(fils, cols, value);
 }
 
 // This doesn't work if representation changes
 byte Image::get_pixel (int k) const {
-    return img[0][k];
+    int fils = k/get_cols();
+    int cols = k%get_cols();
+    return get_pixel(fils, cols);
 }
 
 // Métodos para almacenar y cargar imagenes en disco
 bool Image::Save (const char * file_path) const {
-    byte * p = img[0];
+    int nrows = get_rows();
+    int ncols = get_cols();
+    byte * p = new byte [nrows*ncols];
+
+    for (int i = 0; i < nrows; i++)
+        for (int j = 0; j < ncols; j++)
+            p[i*ncols + j] = get_pixel(i,j);
+
     return WritePGMImage(file_path, p, rows, cols);
 }
 // Método para obtener una imagen con la tonalidad invertida
@@ -322,16 +336,16 @@ void Image::ShuffleRows(void) {
     const int P = 9973;
     int fils = get_rows();
     int cols = get_cols();
-    Image newimage(fils,cols);
+    byte ** newimage = new byte * [fils];
     int newfil;
 
     for (int i = 0; i < fils; i++){
         newfil = i*P % fils;
-        for (int j = 0; j < cols; j++)
-            newimage.set_pixel(i,j, get_pixel(newfil,j));
+        newimage[newfil]=img[i];
     }
 
-    Copy(newimage);
+   for (int i = 0; i < fils; i++)
+       img[i]=newimage[i];
 
 }
 

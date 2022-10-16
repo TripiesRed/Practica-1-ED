@@ -98,8 +98,15 @@ build CMakeFiles/image.dir/estudiante/src/contraste.cpp.o: CXX_COMPILER__image_D
   OBJECT_DIR = CMakeFiles/image.dir
   OBJECT_FILE_DIR = CMakeFiles/image.dir/estudiante/src
 
-build CMakeFiles/image.dir/estudiante/src/analisis_eficiencia2.cpp.o: CXX_COMPILER__image_Debug /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/src/analisis_eficiencia2.cpp || cmake_object_order_depends_target_image
-  DEP_FILE = CMakeFiles/image.dir/estudiante/src/analisis_eficiencia2.cpp.o.d
+build CMakeFiles/image.dir/estudiante/src/analisis_eficiencia.cpp.o: CXX_COMPILER__image_Debug /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/src/analisis_eficiencia.cpp || cmake_object_order_depends_target_image
+  DEP_FILE = CMakeFiles/image.dir/estudiante/src/analisis_eficiencia.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/include
+  OBJECT_DIR = CMakeFiles/image.dir
+  OBJECT_FILE_DIR = CMakeFiles/image.dir/estudiante/src
+
+build CMakeFiles/image.dir/estudiante/src/barajar.cpp.o: CXX_COMPILER__image_Debug /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/src/barajar.cpp || cmake_object_order_depends_target_image
+  DEP_FILE = CMakeFiles/image.dir/estudiante/src/barajar.cpp.o.d
   FLAGS = -g -std=gnu++14
   INCLUDES = -I/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/include
   OBJECT_DIR = CMakeFiles/image.dir
@@ -113,7 +120,7 @@ build CMakeFiles/image.dir/estudiante/src/analisis_eficiencia2.cpp.o: CXX_COMPIL
 #############################################
 # Link the static library libimage.a
 
-build libimage.a: CXX_STATIC_LIBRARY_LINKER__image_Debug CMakeFiles/image.dir/estudiante/src/image.cpp.o CMakeFiles/image.dir/estudiante/src/imageop.cpp.o CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o CMakeFiles/image.dir/estudiante/src/zoom.cpp.o CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o CMakeFiles/image.dir/estudiante/src/icono.cpp.o CMakeFiles/image.dir/estudiante/src/contraste.cpp.o CMakeFiles/image.dir/estudiante/src/analisis_eficiencia2.cpp.o
+build libimage.a: CXX_STATIC_LIBRARY_LINKER__image_Debug CMakeFiles/image.dir/estudiante/src/image.cpp.o CMakeFiles/image.dir/estudiante/src/imageop.cpp.o CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o CMakeFiles/image.dir/estudiante/src/zoom.cpp.o CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o CMakeFiles/image.dir/estudiante/src/icono.cpp.o CMakeFiles/image.dir/estudiante/src/contraste.cpp.o CMakeFiles/image.dir/estudiante/src/analisis_eficiencia.cpp.o CMakeFiles/image.dir/estudiante/src/barajar.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles/image.dir
   POST_BUILD = :
@@ -286,6 +293,72 @@ build contraste: CXX_EXECUTABLE_LINKER__contraste_Debug CMakeFiles/contraste.dir
   TARGET_FILE = contraste
   TARGET_PDB = contraste.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target barajar
+
+
+#############################################
+# Order-only phony target for barajar
+
+build cmake_object_order_depends_target_barajar: phony || cmake_object_order_depends_target_image
+
+build CMakeFiles/barajar.dir/estudiante/src/barajar.cpp.o: CXX_COMPILER__barajar_Debug /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/src/barajar.cpp || cmake_object_order_depends_target_barajar
+  DEP_FILE = CMakeFiles/barajar.dir/estudiante/src/barajar.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/include
+  OBJECT_DIR = CMakeFiles/barajar.dir
+  OBJECT_FILE_DIR = CMakeFiles/barajar.dir/estudiante/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target barajar
+
+
+#############################################
+# Link the executable barajar
+
+build barajar: CXX_EXECUTABLE_LINKER__barajar_Debug CMakeFiles/barajar.dir/estudiante/src/barajar.cpp.o | libimage.a || libimage.a
+  FLAGS = -g
+  LINK_LIBRARIES = libimage.a
+  OBJECT_DIR = CMakeFiles/barajar.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = barajar
+  TARGET_PDB = barajar.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target eficiencia
+
+
+#############################################
+# Order-only phony target for eficiencia
+
+build cmake_object_order_depends_target_eficiencia: phony || cmake_object_order_depends_target_image
+
+build CMakeFiles/eficiencia.dir/estudiante/src/analisis_eficiencia.cpp.o: CXX_COMPILER__eficiencia_Debug /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/src/analisis_eficiencia.cpp || cmake_object_order_depends_target_eficiencia
+  DEP_FILE = CMakeFiles/eficiencia.dir/estudiante/src/analisis_eficiencia.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I/home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/estudiante/include
+  OBJECT_DIR = CMakeFiles/eficiencia.dir
+  OBJECT_FILE_DIR = CMakeFiles/eficiencia.dir/estudiante/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target eficiencia
+
+
+#############################################
+# Link the executable eficiencia
+
+build eficiencia: CXX_EXECUTABLE_LINKER__eficiencia_Debug CMakeFiles/eficiencia.dir/estudiante/src/analisis_eficiencia.cpp.o | libimage.a || libimage.a
+  FLAGS = -g
+  LINK_LIBRARIES = libimage.a
+  OBJECT_DIR = CMakeFiles/eficiencia.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = eficiencia
+  TARGET_PDB = eficiencia.dbg
+
 
 #############################################
 # Utility command for doc_doxygen
@@ -337,7 +410,7 @@ build image: phony libimage.a
 #############################################
 # Folder: /home/gonzalomp/Escritorio/EstructuraDatos/ej01_imagenes/cmake-build-debug
 
-build all: phony libimage.a negativo subimagen zoom icono contraste doc_doxygen
+build all: phony libimage.a negativo subimagen zoom icono contraste barajar eficiencia doc_doxygen
 
 # =============================================================================
 # Built-in targets
