@@ -279,7 +279,7 @@ void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
     double quotient3_den = 255 - in2;
     double quotient3 = quotient3_num / quotient3_den;
     int new_byte;
-
+/*
     for(int i = 0; i < get_rows(); i++){
         for(int j = 0; j < get_cols(); j++){
 
@@ -290,9 +290,6 @@ void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
             else{
                 if(get_pixel(i, j) <= in2){
                     new_byte = round(out1 + (quotient2 * (get_pixel(i, j) - in1)));
-                    if(i == 0 && j == 13){
-                        cout << endl << get_pixel(i, j) << endl;
-                    }
                 }
 
                 else{
@@ -301,6 +298,23 @@ void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
             }
             set_pixel(i, j, new_byte);
         }
+    } */
+
+    for(int k = 0; k < get_cols()*get_rows(); k++){
+        if((get_pixel(k) >= 0) && (get_pixel(k) < in1)){
+            new_byte = round(quotient1 * get_pixel(k));
+
+        }
+        else{
+            if(get_pixel(k) <= in2){
+                new_byte = round(out1 + (quotient2 * (get_pixel(k) - in1)));
+            }
+
+            else{
+                new_byte = round(out2 + (quotient3 * (get_pixel(k) - in2)));
+            }
+        }
+        set_pixel(k, new_byte);
     }
 }
 
