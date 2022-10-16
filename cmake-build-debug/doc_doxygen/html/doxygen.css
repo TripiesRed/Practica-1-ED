@@ -1811,3 +1811,12 @@ u {
 .doxtable{
 	transition: all 1.5s;
 }
+
+.graphics{
+	display: block;
+	margin-bottom: 20px;
+}
+
+.notes{
+	font-weight: normal;
+}

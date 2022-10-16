@@ -207,6 +207,30 @@ doc_doxygen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/build
 .PHONY : doc_doxygen/fast
 
+estudiante/src/analisis_eficiencia2.o: estudiante/src/analisis_eficiencia2.cpp.o
+.PHONY : estudiante/src/analisis_eficiencia2.o
+
+# target to build an object file
+estudiante/src/analisis_eficiencia2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/analisis_eficiencia2.cpp.o
+.PHONY : estudiante/src/analisis_eficiencia2.cpp.o
+
+estudiante/src/analisis_eficiencia2.i: estudiante/src/analisis_eficiencia2.cpp.i
+.PHONY : estudiante/src/analisis_eficiencia2.i
+
+# target to preprocess a source file
+estudiante/src/analisis_eficiencia2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/analisis_eficiencia2.cpp.i
+.PHONY : estudiante/src/analisis_eficiencia2.cpp.i
+
+estudiante/src/analisis_eficiencia2.s: estudiante/src/analisis_eficiencia2.cpp.s
+.PHONY : estudiante/src/analisis_eficiencia2.s
+
+# target to generate assembly for a file
+estudiante/src/analisis_eficiencia2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/analisis_eficiencia2.cpp.s
+.PHONY : estudiante/src/analisis_eficiencia2.cpp.s
+
 estudiante/src/contraste.o: estudiante/src/contraste.cpp.o
 .PHONY : estudiante/src/contraste.o
 
@@ -426,6 +450,9 @@ help:
 	@echo "... negativo"
 	@echo "... subimagen"
 	@echo "... zoom"
+	@echo "... estudiante/src/analisis_eficiencia2.o"
+	@echo "... estudiante/src/analisis_eficiencia2.i"
+	@echo "... estudiante/src/analisis_eficiencia2.s"
 	@echo "... estudiante/src/contraste.o"
 	@echo "... estudiante/src/contraste.i"
 	@echo "... estudiante/src/contraste.s"

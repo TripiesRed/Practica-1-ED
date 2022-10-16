@@ -324,6 +324,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/diegoos_03/CLionProjects/Practica-1-ED/estudiante/src/analisis_eficiencia2.cpp">
+			<Option target="image"/>
+		</Unit>
 		<Unit filename="/home/diegoos_03/CLionProjects/Practica-1-ED/estudiante/src/contraste.cpp">
 			<Option target="image"/>
 			<Option target="contraste"/>
