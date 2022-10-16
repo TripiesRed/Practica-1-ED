@@ -156,7 +156,7 @@ bool Image::Save (const char * file_path) const {
     return WritePGMImage(file_path, p, rows, cols);
 }
 // Método para obtener una imagen con la tonalidad invertida
-void Image::Invert() {
+void Image::Invert(void) {
     for (int i=0; i<size(); i++)
         set_pixel(i,255-get_pixel(i));
 }
@@ -189,7 +189,7 @@ Image Image::Crop(int nrow, int ncol, int height, int width) const {
 }
 
 // Método para obtener una imagen aumentada al doble de su tamaño
-Image Image::Zoom2X() const {
+Image Image::Zoom2X(void) const {
 
     int newheight = get_rows()*2-1;
     int newwidth = get_cols()*2-1;
@@ -270,6 +270,7 @@ Image Image::Subsample(int factor) const {
     return newimage;
 }
 
+// Método para obtener una imagen con nuevo contraste
 void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
     double quotient1 ;
     if (in1!=0) quotient1= (double)out1 / (double)in1;
@@ -301,6 +302,7 @@ void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
     }
 }
 
+// Método para calcular el valor medio de los píxeles de una imagen
 double Image::Mean(int i, int j, int height, int width) const{
     Image frag(Crop(i, j, height, width));
     double sum = 0;
@@ -313,5 +315,23 @@ double Image::Mean(int i, int j, int height, int width) const{
 
     double mean = sum / (frag.get_cols() * frag.get_rows());
     return mean;
+}
+
+// Método que baraja las filas de una imagen pseudoaleatoriamente
+void Image::ShuffleRows(void) {
+    const int P = 9973;
+    int fils = get_rows();
+    int cols = get_cols();
+    Image newimage(fils,cols);
+    int newfil;
+
+    for (int i = 0; i < fils; i++){
+        newfil = i*P % fils;
+        for (int j = 0; j < cols; j++)
+            newimage.set_pixel(i,j, get_pixel(newfil,j));
+    }
+
+    Copy(newimage);
+
 }
 
