@@ -1787,7 +1787,7 @@ u {
 	right: 2%;
 	box-shadow: #808080 2px 2px 2px;
 	cursor: pointer;
-	transition: all 500ms;
+	transition: all 1s;
 }
 
 .ilustrations:hover{
