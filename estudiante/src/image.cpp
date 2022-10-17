@@ -191,11 +191,11 @@ Image Image::Crop(int nrow, int ncol, int height, int width) const {
     }
 
     Image newimage (height, width);
-    for(int i= 0; i < width; i++){
+    for(int i= 0; i < height; i++){
 
-        for(int j=0; j < height; j++){
+        for(int j=0; j < width; j++){
 
-            newimage.set_pixel(j, i, get_pixel(j+nrow,i+ncol));
+            newimage.set_pixel(i, j, get_pixel(i+nrow,j+ncol));
         }
     }
 
@@ -246,36 +246,22 @@ Image Image::Zoom2X(void) const {
 // Método para obtener una imagen con tamaño reducido
 Image Image::Subsample(int factor) const {
 
-    int newheight=get_rows()/factor;
-    int newwidth=get_cols()/factor;
+    if (factor > (int)get_rows()) factor = get_rows();
+    int newheight = lround(get_rows()/factor);
+    int newwidth = lround(get_cols()/factor);
     Image newimage (newheight,newwidth);
     byte valor_aux;
-    int contfils=0, contcols=0, niter=0;
-    double total=0;
+    double total = 0;
 
     //Asignación de pixeles
     for(int i = 0; i < newheight; i++){
         for(int j = 0; j < newwidth; j++){
 
-            //Tomamos los valores de los pixeles de la imagen origen
-            for(int k = i*factor; k < contfils+factor && k < get_rows(); k++)
-                for(int l = j*factor; l < contcols+factor && l < get_cols(); l++){
-                    total+= (int)get_pixel(k,l);
-                    niter++;
-                }
-
-            valor_aux= lround(total/niter);
+            total= Mean(i*factor,j*factor,factor,factor);
+            valor_aux= lround(total);
             newimage.set_pixel(i,j,valor_aux);
 
-            //Actualizamos contador de columnas
-            contcols+=factor;
-            niter=0;
-            total=0;
         }
-
-        //Actualizamos contador de filas
-        contfils+=factor;
-        contcols=0;
 
     }
 
@@ -316,16 +302,17 @@ void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
 
 // Método para calcular el valor medio de los píxeles de una imagen
 double Image::Mean(int i, int j, int height, int width) const{
-    Image frag(Crop(i, j, height, width));
-    double sum = 0;
+    Image frag=Crop(i, j, height, width);
+    double sum = 0, niter=0;
 
     for(int f = 0; f < frag.get_rows(); f++){
         for (int c = 0; c < frag.get_cols(); c++){
-            sum += get_pixel(f, c);
+            sum += frag.get_pixel(f, c);
+            niter++;
         }
     }
 
-    double mean = sum / (frag.get_cols() * frag.get_rows());
+    double mean = sum / niter;
     return mean;
 }
 
